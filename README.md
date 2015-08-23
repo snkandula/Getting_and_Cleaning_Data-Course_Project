@@ -21,11 +21,14 @@ List of files used from the downloaded dataset for this project in the Folder "U
 The file "run_analysis.R" contains all the required R code to perform all the 5 steps:
  
 1.Merges the training and the test sets to create one data set.
+
 2.Extracts only the measurements on the mean and standard deviation for each measurement. 
+
 3.Uses descriptive activity names to name the activities in the data set
+
 4.Appropriately labels the data set with descriptive variable names. 
-5.From the data set in step 4, creates a second, independent tidy data set with 
-  the average of each variable for each activity and each subject.
+
+5.From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 TidyDataSet.txt is the final output file genarated from the this run_analysis.R code and uploaded to the course project submition
 
@@ -33,13 +36,21 @@ How the code works:
 1. Code reads the meata data from the files:
    "UCI HAR Dataset/features.txt"
     "UCI HAR Dataset/activity_labels.txt"
+
 2. Reads subject, features and activity data from train and test sub folders
-3. Merges train and test data using rbind
+
+3. Merges train and test data using 
+
 4. Prepares completeData from features, activity and subject using cbind
+
 5. Prepares a vector with requiredColumns
+
 6. Uses descriptive activity names to name the activities in the data set
+
 7. Elaborates column names by replacing acronyms
+
 8. Creates a tidy data set with average of each variable
+
 9. Writes this tidy data set into a file with tab delimiter
  
 License:
